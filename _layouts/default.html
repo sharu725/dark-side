@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }} - {{site.title}}</title>
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="{{site.baseurl}}/">Home</a></li>
+            <li><a href="/about/">About</a></li>
+            <li><a href="/contact/">Contact</a></li>
+        </ul>
+    </nav>
+    <a class="title-a" href="{{site.baseurl}}/"><h1 class="title">{{site.title}}</h1></a>
+</header>
+      
+      {% if page.path contains '_post' %}
+          <h1>{{page.title}}</h1>
+      {% endif %}
+  
+  {{ content }}
+
+
+<footer>
+    <p><small>Copyrights &copy; {{site.time | date: '%Y'}} {{site.title}}.</small></p>
+    <p><small>Built with <span>❤</span> by <a href="http://webjeda.com">webjeda</a></small></p>
+</footer>
+</body>
+</html>

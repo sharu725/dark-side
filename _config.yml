@@ -1,0 +1,11 @@
+### your site title here
+
+title: The Dark Side
+
+permalink: /:title
+
+baseurl: /dark-side
+
+### exclude the instructions / write-up in the README.md
+exclude:
+- README.md
