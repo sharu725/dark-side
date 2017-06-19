@@ -6,6 +6,9 @@ permalink: /:title
 
 baseurl: /dark-side
 
+sass: 
+  style: compressed
+
 ### exclude the instructions / write-up in the README.md
 exclude:
 - README.md
