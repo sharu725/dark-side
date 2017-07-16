@@ -22,16 +22,14 @@ layout: compress
     <a class="title-a" href="{{site.baseurl}}/"><h1 class="title">{{site.title}}</h1></a>
 </header>
       
-      {% if page.path contains '_post' %}
-          <h1>{{page.title}}</h1>
-      {% endif %}
   
   {{ content }}
 
 
 <footer>
-    <p><small>Copyrights &copy; {{site.time | date: '%Y'}} {{site.title}}.</small></p>
-    <p><small>Built with <span>❤</span> by <a href="http://webjeda.com">webjeda</a></small></p>
+    <p><small>Copyrights &copy; {{site.time | date: '%Y'}} {{site.title}}</small></p>
+    <p><small>&nbsp;&#124;&nbsp;Built with <span>❤</span> by <a href="http://webjeda.com">webjeda</a></small></p>
 </footer>
+{% include analytics.html %}
 </body>
 </html>
