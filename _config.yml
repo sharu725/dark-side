@@ -4,7 +4,7 @@ title: The Dark Side
 
 permalink: /:title
 
-baseurl: /dark-side
+#baseurl: /dark-side
 
 sass: 
   style: compressed
